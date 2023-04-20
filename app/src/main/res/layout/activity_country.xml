@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CountryActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Labels"
+        android:layout_below="@id/name"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@id/name"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/buttonCountryList"
+        android:layout_alignParentBottom="true"
+        android:layout_width="229dp"
+        android:layout_height="57dp"
+        android:text="Back to List"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        app:iconTint="@color/purple_700" />
+</RelativeLayout>
